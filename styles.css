@@ -1,0 +1,66 @@
+body {
+    background-color: lavender;
+    font-family: 'Elephant', sans-serif;
+    color: #6a4c9c; /* Purple font color */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #5f258f; /* Darker purple for the text */
+}
+
+#hidden-message {
+    margin-top: 20px;
+    display: none;
+    font-size: 24px;
+    color: #5f258f;
+    background-color: #f3e8fc;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reveal-btn {
+    background-color: #6a4c9c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#reveal-btn:hover {
+    background-color: #5f258f;
+}
+
+#heart {
+    width: 150px;
+    height: 150px;
+    background-color: purple;
+    clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hidden {
+    display: none;
+}
